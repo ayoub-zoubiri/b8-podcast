@@ -18,10 +18,10 @@ class EpisodeFactory extends Factory
     public function definition(): array
     {
         return [
-            'user_id'=>Podcast::factory(),
+            'podcast_id'=>Podcast::factory(),
             'title'=>fake()->sentence(),
             'description'=>fake()->paragraph(),
-            'audio'=>fake()->string(),
+            'audio'=>fake()->text(),
         ];
     }
 }

@@ -4,6 +4,9 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Episode;
+use App\Models\User;
+
 
 class Podcast extends Model
 {
@@ -11,4 +14,13 @@ class Podcast extends Model
      protected $fillable = [
         'title','category','description','image',
     ];
+
+    public function user()
+        {
+            return $this->belongsTo(User::class);
+        }
+     public function episodes()
+    {
+        return $this->hasMany(Episode::class);
+    }
 }
