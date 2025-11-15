@@ -6,6 +6,9 @@
 /storage/*.key
 /vendor
 .env
+.env.cloudinary
+.gitignore
+
 .env.backup
 .env.production
 .phpunit.result.cache

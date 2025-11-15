@@ -11,7 +11,7 @@ class Episode extends Model
 {
     use HasFactory;
       protected $fillable = [
-        'title','description','audio'
+        'title','description','audio','podcast_id'
     ];
     public function podcast()
         {

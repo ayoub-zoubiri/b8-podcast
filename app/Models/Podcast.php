@@ -12,7 +12,7 @@ class Podcast extends Model
 {
     use HasFactory;
      protected $fillable = [
-        'title','category','description','image',
+        'title','category','description','image','user_id',
     ];
 
     public function user()
